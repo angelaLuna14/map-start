@@ -15,7 +15,7 @@ HookReturnCode weaponstart( CBasePlayer@ pPlayer ){
 
 
 HookReturnCode mapstart( CBasePlayer@ pPlayer ){
-    if( g_diffy.getDiff() == 1.0 && g_Engine.mapname == "inhuman"){
+    if(g_Engine.mapname == "inhuman"){
         pPlayer.GiveNamedItem("weapon_rpg", 0, 0); //ejm para un solo mapa 
     }
     

@@ -2,8 +2,8 @@ void PluginInit(){
 	g_Module.ScriptInfo.SetAuthor( "Angela Luna" );
 	g_Module.ScriptInfo.SetContactInfo( "https://discord.gg/vZDG886" );
 	
-	g_Hooks.RegisterHook( Hooks::Player::ClientPutInServer, @weaponstart );
-	g_Hooks.RegisterHook( Hooks::Player::ClientPutInServer, @mapstart );   
+	g_Hooks.RegisterHook( Hooks::Player::PlayerSpawn, @weaponstart );
+	g_Hooks.RegisterHook( Hooks::Player::PlayerSpawn, @mapstart );   
 }
 
 
